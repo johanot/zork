@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }: with lib; with pkgs;
+{ pkgs ? (import <nixpkgs> {}) }: with pkgs; with pkgs.lib;
 let
   savedir = "/data/savegames";
 
