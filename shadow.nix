@@ -2,7 +2,7 @@
 pkgs.buildEnv {
     name = "shadow-setup";
     postBuild = ''
-      mkdir -p $out/var/empty $out/home/zork
+      mkdir -p $out/var/empty $out/home/zork $out/run
     '';
     paths = [
       (
